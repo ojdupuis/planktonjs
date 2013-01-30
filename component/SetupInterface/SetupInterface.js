@@ -68,7 +68,7 @@ function SetupInterface(component) {
         }).appendTo('#setupcontainer')
         $('<div/>',{
             id: 'sign',
-            html: '<a class="link" href="https://github.com/ojdupuis/planktonjs">https://github.com/ojdupuis/planktonj</a>',
+            html: '<a class="link" href="https://github.com/ojdupuis/planktonjs">https://github.com/ojdupuis/planktonjs</a>',
             css: {
                 height: '25px'
             }
