@@ -1,0 +1,12 @@
+.jslider_plastic .jslider-bg i,
+.jslider_plastic .jslider-pointer {
+    background-image: url(../img/jslider.plastic.png);
+}
+
+.jslider-value {
+    color: #000000;
+}
+
+.jslider-label {
+    color: #ffffff ! important;
+}

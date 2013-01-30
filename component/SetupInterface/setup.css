@@ -1,0 +1,88 @@
+#setupcontainer {
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #fff;
+    position: absolute;
+    padding-top: 0px;
+    border-radius: 6px;
+    border: 1px solid #888888;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#setupcontainer:hover {
+    vertical-align: bottom;
+    margin-top: -46px ! important;
+    position: absolute;
+}
+
+#setupControls {
+    position: relative;
+    display: block;
+    padding-top: 35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#setuptitle {
+    position: relative;
+    /*float: left;*/
+    display: inline;
+    color: #cccccc;
+    font-size: 20px;
+    vertical-align: bottom;
+    margin-top: 2px;
+
+}
+
+.controlnumber {
+    display: inline-block;
+    clear: left;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #888888;
+    padding: 3px;
+    width: 160px;
+}
+
+.controlsectiontitle {
+    font-weight: bold;
+    display: block;
+    clear: both;
+}
+
+.controlsection {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: 160px;
+   clear: left;
+}
+
+/******************
+ * Slider
+ */
+
+.controlnumbertitle {
+    margin-bottom: 15px;
+    font-size: 0.7em;
+}
+
+#sign {
+   display: inline;
+   float: right;
+   margin-right: 10px;
+   color: #cccccc;
+   padding: 0;
+   font-size: 12px;
+   font-style: italic;
+   padding-top: 5px;
+}
+
+.link{
+   text-decoration: none;
+   color: #cccccc;
+}
