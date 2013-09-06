@@ -1,0 +1,81 @@
+div.genome_canvas {
+    height: 27px;
+    /*width: 250px;*/
+    overflow: hidden;
+    display: float;
+    /*float: left;*/
+    /*clear: both;*/
+    margin-bottom: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #888888;
+    padding: 3px;
+}
+
+
+.border_grey {
+   border: 1px solid #888888;
+}
+
+.rounded {
+   border-radius: 3px;
+}
+
+.genome_box{
+   width: 264px;
+}
+.padding_5 {
+   padding: 5px;
+}
+
+canvas.genome_canvas {
+    display: block;
+    border-radius: 5px;
+}
+
+.dashBoardCell {
+    /*width: 10px;*/
+    border: none;
+    display: inline;
+    width: 100%;
+}
+
+.dashBoardLine {
+    display: block;
+    clear: both;
+    border: none;
+    cursor: crosshair ! important;
+    padding: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 1px;
+
+}
+
+li {
+   display: table;
+   color: #888888;
+   margin-top: 20px;
+
+}
+
+.dashBoardLine:hover {
+    display: block;
+    border: 2px solid #990000 ! important;
+    border-radius: 6px;
+    clear: both;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.dashBoardLineSelected {
+    display: block;
+    border: 2px solid #FF0000 ! important;
+    border-radius: 6px;
+    clear: both;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+}
+

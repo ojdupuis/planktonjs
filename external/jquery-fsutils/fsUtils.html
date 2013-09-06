@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>fsUtils</title>
+		<style type="text/css">
+			.button {
+				position: relative;
+				padding-left: 4px;
+				display: inline-block;
+				background-image: url('button.png');
+				background-position: left 0px;
+				background-repeat: no-repeat;
+			}
+
+			.button object {
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+			}
+
+			.button div {
+				padding-right: 4px;
+				background-image: url('button.png');
+				background-position: right -23px;
+				background-repeat: no-repeat;
+			}
+
+			.button div div {
+				height: 23px;
+				font-size: 12px;
+				overflow: hidden;
+				font-family: tahoma;
+				text-align: center;
+				line-height: 23px;
+				padding-left: 6px;
+				padding-right: 6px;
+				background-image: url('button.png');
+				background-position: center -46px;
+				background-repeat: repeat-x;
+			}
+		</style>
+		<script type="text/javascript">
+			function openFileDialogInit() {
+				var loadButton = document.getElementById('loadButton');
+				loadButton.addEventListener('onload', function(binaryData) {
+					var textData = window.atob(binaryData);
+					alert(textData)
+				}.toString());
+			}
+			function saveFileDialogInit() {
+				var saveButton = document.getElementById('saveButton');
+				saveButton.addEventListener('onsave', function() {
+					return {
+						'data': 'MY_DATA',
+						'filename': 'test.txt'
+					};
+				}.toString());
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			Use buttons to load / save text documents from your local file system
+		</div>
+		<div class="button">
+			<div>
+				<div>Load From File...</div>
+			</div>
+			<object id="loadButton">
+				<param name="movie" value="fsutils.swf" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="wmode" value="transparent" />
+				<param name="FlashVars" value=
+					"onload=openFileDialogInit&dialogType=open&fileFilter=*.txt"
+				/>
+			</object>
+		</div>
+		<div class="button">
+			<div>
+				<div>Save To File...</div>
+			</div>
+			<object id="saveButton" type="application/x-shockwave-flash">>
+				<param name="movie" value="fsutils.swf" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="wmode" value="transparent" />
+				<param name="FlashVars" value=
+					"onload=saveFileDialogInit&dialogType=save"
+				/>
+			</object>
+		</div>
+	</body>
+</html>
