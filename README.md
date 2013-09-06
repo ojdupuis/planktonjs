@@ -5,4 +5,4 @@ PlanKtonJS
 
 Fun with JS
 ------------
-see it in action http://planktonjs.org
+see it in action http://ojdupuis.github.io/planktonjs
